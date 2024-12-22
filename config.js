@@ -15,15 +15,15 @@ const fs = require('fs-extra')
  global.website = 'https://github.com/' //wa.me/+91000000000000 
  global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://telegra.ph/file/fb7993e24f7ecdaecbed5.jpg' 
  module.exports = { 
-   botname:   process.env.BOT_NAME === undefined ? 'King-Vajira' : process.env.BOT_NAME, 
-   ownername: process.env.OWNER_NAME === undefined ? 'Vajira' : process.env.OWNER_NAME,  
+   botname:   process.env.BOT_NAME === undefined ? 'King-cyber' : process.env.BOT_NAME, 
+   ownername: process.env.OWNER_NAME === undefined ? 'cyberrowdy' : process.env.OWNER_NAME,  
    author:  process.env.PACK_INFO.split(";")[0] === undefined ? '' : process.env.PACK_INFO.split(";")[0], 
-   auto_read_status :  process.env.AUTO_READ_STATUS === undefined ? false : process.env.AUTO_READ_STATUS, 
+   auto_read_status :  process.env.AUTO_READ_STATUS === undefined ? true : process.env.AUTO_READ_STATUS, 
    packname:  process.env.PACK_INFO.split(";")[1] === undefined ? '-' : process.env.PACK_INFO.split(";")[1],
-   sessionName:  process.env.SESSION_ID === undefined ? false : process.env.SESSION_ID, 
-   autoreaction:  process.env.AUTO_REACTION  === undefined ? false : process.env.AUTO_REACTION , 
+   sessionName:  process.env.SESSION_ID === undefined ? true:"VAJIRA-MD=nRMwmJCQ#vTZtdREvWY7-DxLxolhpgqH6vOA30OCDcNAkzRf-hX4"
+   autoreaction:  process.env.AUTO_REACTION  === undefined ? true: process.env.AUTO_REACTION , 
    antibadword :  process.env.ANTI_BAD_WORD === undefined ? 'nbwoed' : process.env.ANTI_BAD_WORD, 
-   alwaysonline:  process.env.ALWAYS_ONLINE === undefined ? false : process.env.ALWAYS_ONLINE,
+   alwaysonline:  process.env.ALWAYS_ONLINE === undefined ? true: process.env.ALWAYS_ONLINE,
 voice  :  process.env.AUTO_VOICE === undefined ? false : process.env.AUTO_VOICE, 
    antifake : process.env.FAKE_COUNTRY_CODE === undefined ? '971' : process.env.FAKE_COUNTRY_CODE, 
    readmessage:  process.env.READ_MESSAGE === undefined ? false : process.env.READ_MESSAGE, 
